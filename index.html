@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Tuesday</title>
+    <link rel="stylesheet" href="Style/Fonts.css">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <div class = "game-wrapper">
+        <div class = "screen-0" id = "loading-image">
+            <img class = "screen-0-img" src="./Assets/Images/Backgrounds/Title_Letters_Decorations1.png" alt="TacoTuesday">
+        </div>
+        <div id = "ingame" class = "screen">
+            <canvas id = "game-canvas" width = 1280 height = 720></canvas>
+            
+            <!-- <div id = "customizability">
+                <h1>Customizability</h1>
+                <label class="container">Visible Bounding Box
+                <input type="checkbox" id="VisibleBoundingBox">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Visible Points
+                <input type="checkbox" id = "VisiblePoints">
+                <span class="checkmark"></span>
+            </div> -->
+
+        </div>
+        <div class = "screen horizontal" id = main-menu>
+            <button class = "main-menu-button start-game" id = "startGame-mainMenu"> </button>
+            <button class = "main-menu-button instructions" id = "instructions-mainMenu"></button>
+            <button class = "main-menu-button settings" id = "settings-mainMenu"></button>
+        </div>
+        
+        <div class = "screen vertical" id = "instructions">
+            <button class = "main-menu-button main-menu bottom-button" id = "mainMenu-instructions"></button>
+            <button class = "main-menu-button start-game bottom-button" id = "startGame-instructions"></button>
+        </div>
+
+        <div class = "screen vertical" id = "settings">
+            <div id = "keys-choices">
+                <div>
+                    <input type = "radio" name="keys-choice" id="letters-keys-cb" checked="true">
+                    <img id = "letters-keys-option" src="./Assets/Images/Other/Letters_Keys.png" alt="">
+                </div>
+
+                <div>
+                    <input type = "radio" name="keys-choice" id="arrows-keys-cb">
+                    <img id = "arrows-keys-option" src="./Assets/Images/Other/Arrows_Keys.png" alt="">
+                </div>
+            </div>
+
+            <button class = "main-menu-button main-menu bottom-button" id = "mainMenu-settings"></button>
+            <button class = "main-menu-button start-game bottom-button" id = "startGame-settings"></button>
+        </div>
+        
+        <div class = "screen horizontal" id = "game-over">
+            <div id = "highest-score"></div>
+            <button class = "main-menu-button restart" id = "restart-gameOver"></button>
+            <button class = "main-menu-button main-menu" id = "mainMenu-gameOver"></button>
+        </div>
+    </div>
+    
+    <script  type="module" src = "Scripts/dom.js"></script>
+    <script  type="module" src = "Scripts/domScript.js"></script>
+    <script  type="module" src = "Scripts/script.js"></script>
+</body>
+</html>

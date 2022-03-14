@@ -1,0 +1,16 @@
+/********************************
+ *   Ana Bonavides Aguilar      *
+ *   Taco Tuesday               *
+ *   Creative Code Lab Project  *
+ *   cc211010 FH St. Poelten    *
+ ********************************/
+ 
+@font-face {
+    font-family: mexican-font;
+    src: url(../Assets/Fonts/Mayan.ttf);
+}
+
+@font-face {
+    font-family: strawberry;
+    src: url(../Assets/Fonts/StrawberryMuffin.ttf);
+}
